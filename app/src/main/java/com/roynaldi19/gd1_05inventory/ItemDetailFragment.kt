@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.inventory
+package com.roynaldi19.gd1_05inventory
 
 
 import android.os.Bundle
@@ -24,7 +24,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.inventory.databinding.FragmentItemDetailBinding
+import com.roynaldi19.gd1_05inventory.databinding.FragmentItemDetailBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 /**
