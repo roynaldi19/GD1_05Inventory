@@ -17,7 +17,6 @@ import com.roynaldi19.gd1_05inventory.data.Item
 import com.roynaldi19.gd1_05inventory.data.getFormattedPrice
 import com.roynaldi19.gd1_05inventory.viewmodel.InventoryViewModel
 import com.roynaldi19.gd1_05inventory.viewmodel.InventoryViewModelFactory
-import kotlinx.coroutines.selects.select
 
 class ItemDetailFragment : Fragment() {
     private val navigationArgs: ItemDetailFragmentArgs by navArgs()
@@ -57,6 +56,7 @@ class ItemDetailFragment : Fragment() {
             itemCount.text = item.quantityInStock.toString()
             sellItem.isEnabled = viewModel.isStockAvailable(item)
             sellItem.setOnClickListener { viewModel.sellItem(item) }
+            deleteItem.setOnClickListener { showConfirmationDialog() }
         }
     }
 
@@ -73,6 +73,7 @@ class ItemDetailFragment : Fragment() {
     }
 
     private fun deleteItem() {
+        viewModel.deleteItem(item)
         findNavController().navigateUp()
     }
 
