@@ -1,10 +1,11 @@
-package com.roynaldi19.gd1_05inventory
+package com.roynaldi19.gd1_05inventory.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
+import com.roynaldi19.gd1_05inventory.R
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 

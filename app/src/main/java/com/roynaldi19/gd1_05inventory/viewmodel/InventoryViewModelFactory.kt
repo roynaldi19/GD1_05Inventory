@@ -1,4 +1,4 @@
-package com.roynaldi19.gd1_05inventory
+package com.roynaldi19.gd1_05inventory.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
